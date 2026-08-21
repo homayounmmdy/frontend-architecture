@@ -1,0 +1,16 @@
+node_modules/
+dist/
+**/public/uploads/
+
+.DS_Store
+
+.env
+.env.local
+.env.*.local
+
+*.log
+
+.idea/
+.vscode/
+
+.playwright-cli/

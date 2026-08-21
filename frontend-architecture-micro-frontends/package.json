@@ -1,0 +1,20 @@
+{
+  "name": "commerceos",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "npm@11.8.0",
+  "scripts": {
+    "dev": "turbo dev --filter=@commerceos/api --filter=@commerceos/app-shell",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "preview": "turbo preview --filter=@commerceos/api --filter=@commerceos/app-shell",
+    "boundaries": "turbo boundaries"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.12"
+  }
+}

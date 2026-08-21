@@ -1,0 +1,29 @@
+{
+  "name": "@commerceos/shared",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@commerceos/ui": "*",
+    "@tanstack/react-query": "^5.59.20",
+    "@tanstack/react-query-devtools": "^5.59.20",
+    "@tanstack/react-router": "^1.79.1",
+    "lucide-react": "^0.454.0",
+    "react": "^18.3.1"
+  },
+  "exports": {
+    "./api/*": "./api/*.ts",
+    "./components/*": "./components/*.tsx",
+    "./components/feedback/*": "./components/feedback/*.tsx",
+    "./components/theme/*": "./components/theme/*.tsx",
+    "./domain/*": "./domain/*.ts",
+    "./lib/*": "./lib/*.ts",
+    "./mocks/data/*": "./mocks/data/*.ts",
+    "./permissions/*": "./permissions/*.ts",
+    "./providers/*": "./providers/*.tsx",
+    "./router/*": "./router/*.tsx",
+    "./styles/globals.css": "./styles/globals.css",
+    "./theme/theme-context": "./theme/theme-context.ts",
+    "./theme/theme-provider": "./theme/theme-provider.tsx",
+    "./theme/use-theme": "./theme/use-theme.ts"
+  }
+}

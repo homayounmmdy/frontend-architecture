@@ -1,0 +1,23 @@
+{
+  "name": "@commerceos/api",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --experimental-strip-types src/index.ts",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "start": "node --experimental-strip-types src/index.ts",
+    "reset:data": "node --experimental-strip-types src/scripts/reset-data.ts",
+    "preview": "npm start"
+  },
+  "dependencies": {
+    "@commerceos/shared": "*",
+    "@hono/node-server": "^1.19.14",
+    "hono": "^4.12.18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.18",
+    "typescript": "^5.9.3"
+  }
+}
