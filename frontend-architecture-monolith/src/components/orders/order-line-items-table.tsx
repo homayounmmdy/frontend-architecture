@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useParams } from "@tanstack/react-router";
 import type { OrderLineItem } from "@/types";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { formatCurrency } from "@/lib/utils";
@@ -9,10 +9,11 @@ interface OrderLineItemsTableProps {
 }
 
 export function OrderLineItemsTable({ items, className }: OrderLineItemsTableProps) {
+  const {orderId} = useParams({from : '/orders/$orderId'});
   return (
     <Table className={className}>
       <TableHeader>
-        <TableRow>
+        <TableRow> 
           <TableHead>Product</TableHead>
           <TableHead>Quantity</TableHead>
           <TableHead>Price</TableHead>
@@ -26,6 +27,7 @@ export function OrderLineItemsTable({ items, className }: OrderLineItemsTablePro
               <Link
                 to="/catalog/$productId"
                 params={{ productId: item.productId }}
+                search={{orderId}}
                 className="font-medium text-primary hover:underline"
               >
                 {item.productName}
