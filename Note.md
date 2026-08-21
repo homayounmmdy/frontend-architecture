@@ -47,3 +47,11 @@ you architecture are based on
 - Functional requirements
 - team's experience + knowledge
 - technology trends
+
+## The 4 Pillars of Software Architecture 
+
+- Architectural Style
+- Architectural Characteristics
+- Architectural Decisions
+- Logical Components
+
