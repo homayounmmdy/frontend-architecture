@@ -111,3 +111,11 @@ you architecture are based on
 - Strategically differentiating part of the system worth most investment E.g , Order Management
 - Custom business logic that enables the core , but is not differentiating E.g Analytics
 - Common , undifferentiated feature best handled with a standard solution E.g , Authentication
+
+![](./images/commerceOS_subdomains.png) 
+
+![](./images/folder_structure.png)
+
+![](./images/creating_boundaries.png)
+
+![](./images/dependency_rules.png)  
