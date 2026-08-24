@@ -134,3 +134,10 @@ you architecture are based on
 - Difficult dependency management : upgrading a library becomes "all or nothing"
 - Busy CI pipelines : Release trains . Build and tests take forever.
 
+# Monorepos
+ 
+## Adopting Monorepos
+
+- Bring repositories together into a single workspace
+- Break down the monolith(s) into multiple packages
+- Adopt monorepos tooling to handle dependencies and caching
