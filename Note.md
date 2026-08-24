@@ -112,10 +112,25 @@ you architecture are based on
 - Custom business logic that enables the core , but is not differentiating E.g Analytics
 - Common , undifferentiated feature best handled with a standard solution E.g , Authentication
 
-![](./images/commerceOS_subdomains.png) 
+![](./images/commerceOS_subdomains.png)
 
 ![](./images/folder_structure.png)
 
 ![](./images/creating_boundaries.png)
 
-![](./images/dependency_rules.png)  
+![](./images/dependency_rules.png)
+
+### Growing Pains
+
+#### Cons
+
+- Lack of organization harder to find things and onboard people/agents
+- Unclear boundaries no sense of ownership , teams start to step on each other
+- Change amplification seemingly small change require touching files across the entire codebase
+
+#### Pros
+
+- Overloaded shared abstractions : the `common` folder becomes a dumping ground
+- Difficult dependency management : upgrading a library becomes "all or nothing"
+- Busy CI pipelines : Release trains . Build and tests take forever.
+
