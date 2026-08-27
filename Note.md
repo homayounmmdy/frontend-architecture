@@ -141,3 +141,21 @@ you architecture are based on
 - Bring repositories together into a single workspace
 - Break down the monolith(s) into multiple packages
 - Adopt monorepos tooling to handle dependencies and caching
+
+## Sharing Code Across Packages
+
+- Move to a `shared` package
+- Expose limited functionality via an interface
+- Duplicate the code
+- Use dependency injection (e.g a `component slot`)
+- Rethink your abstractions
+
+## What Problems to They Solve ?
+
+- Local caching
+- Distributed/remote caching
+- Task orchestration
+- Workspace analysis
+- Workspace boundaries
+
+ 
