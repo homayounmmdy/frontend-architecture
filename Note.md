@@ -158,4 +158,21 @@ you architecture are based on
 - Workspace analysis
 - Workspace boundaries
 
- 
+## More Turborepo Fun
+
+- npx turbo build --graph graph.mermaid
+- npx turbo devtools
+- npx turbo generate
+- npx turbo query
+
+## Growing Pain
+
+- ~~Lack of organization harder to find things and onboard people/agents~~
+- ~~Unclear boundaries: no sense of ownership, teams start to step on each other~~
+- ~~Change amplification: seemingly small changes require touching files across the entire codebase~~
+- ~~Overloaded shared abstractions: the `common` folder becomes a dumping ground~~
+- ~~Difficult dependency management: upgrading a library becomes `all or nothing`~~
+- ~~Builds and tests take forever in CI~~
+- CI pipelines still busy due to release trains
+- Can't share components at runtime
+
