@@ -117,7 +117,6 @@ you architecture are based on
 ![](./images/folder_structure.png)
 
 ![](./images/creating_boundaries.png)
-
 ![](./images/dependency_rules.png)
 
 ### Growing Pains
@@ -135,7 +134,7 @@ you architecture are based on
 - Busy CI pipelines : Release trains . Build and tests take forever.
 
 # Monorepos
- 
+
 ## Adopting Monorepos
 
 - Bring repositories together into a single workspace
@@ -176,3 +175,51 @@ you architecture are based on
 - CI pipelines still busy due to release trains
 - Can't share components at runtime
 
+## Micro-Frontends
+
+![](./images/Micro-Frontends.png)
+
+## Rule of Thumb
+
+![](./images/rule_of_thumb.png)
+
+## Questions to Consider
+
+- How are we going to split the app? Vertical , horizontal, both?
+- Where does the routing happen ? Client , server , edge ?
+- Where does the rendering happen ? Client , server , edge ?
+- Where does the composition happen ? Client , server , edge , at build time ?
+- How much isolation do we need/want ?
+
+## Flavors of Micro-Frontends
+
+- iframes / Web Components
+- Edge-Side Includes / Import Maps
+- Fragment Orchestration (Single-SPA , Piral , Cloudflare Fragments )
+- Route-Based Orchestration (Cloudflare Workers , Next.js , multi-zones , DIY)
+- Module Federation / Native Federation
+
+## Micro-Frontends Cheatsheet
+
+- If vertical split is enough -> DIY Route-Based Orchestration
+- If you need horizontal split with full isolation -> frames
+- If you're using Next.js -> Multi-zones
+- If you're feeling experimental -> Piral
+- Otherwise -> Module Federation
+
+## Micro-Frontend Communication
+
+- iframes
+  - postMessage() API
+- Module Federation
+  - Props / Context (if host and remote use the same framework)
+  - Custom Events / Message Bus
+  - Signals / Atoms (e.g nanostores)
+  
+## Growing Pains
+
+- Busy CI pipelines due to release trains. Teams want to deploy independently.
+- Areas of the codebase are growing legacy and we want to modernize them incrementally
+- Teams need stronger domain isolation
+- Teams need to compose multiple products into one experience... at runtime.
+- Different teams care about different architectural drivers.
