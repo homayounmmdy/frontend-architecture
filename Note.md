@@ -215,7 +215,7 @@ you architecture are based on
   - Props / Context (if host and remote use the same framework)
   - Custom Events / Message Bus
   - Signals / Atoms (e.g nanostores)
-  
+
 ## Growing Pains
 
 - Busy CI pipelines due to release trains. Teams want to deploy independently.
@@ -223,3 +223,25 @@ you architecture are based on
 - Teams need stronger domain isolation
 - Teams need to compose multiple products into one experience... at runtime.
 - Different teams care about different architectural drivers.
+
+## Module Federation
+
+- Both an architecture and an implementation
+- Born in Webpack 5 , now supported across bundlers
+- Allows independently deployed applications to share code at runtime
+- Supports both CSR and SSR
+- Unlike import-maps , it runs anywhere you can run JavaScript
+
+### Module Federation 2.0
+
+- Dynamic Type Safety
+- Manifest Protocol - mf.manifest.json
+- Dynamic Remote Registration
+- Module Federation DevTools
+
+### More Fun with Micro-Frontends
+
+- Micro-Frontend Version Management
+- Frontend Serviced Discovery Schema
+- Vercel's microfrontend.json schema
+- Module Federation's mf-manifest.json schema
