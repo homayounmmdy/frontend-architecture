@@ -245,3 +245,12 @@ you architecture are based on
 - Frontend Serviced Discovery Schema
 - Vercel's microfrontend.json schema
 - Module Federation's mf-manifest.json schema
+
+![](./images/MFMFMF.png)
+
+# Wrapping Up
+
+![](./images/wrapping_up_1.png)
+![](./images/wrapping_up_2.png)
+![](./images/wrapping_up_3.png)
+![](./images/wrapping_up_4.png)
